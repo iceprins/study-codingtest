@@ -1,23 +1,17 @@
 import sys
 
-meeting_num = int(sys.stdin.readline())
+if __name__ == '__main__':
+    coin_type, coin_sum = map(int, sys.stdin.readline().split())
 
-time_pairs = list()
-for _ in range(meeting_num):
-    pairs = sys.stdin.readline().strip()
-    start_time = int(pairs.split()[0])
-    end_time = int(pairs.split()[1])
-    time_pairs.append((start_time, end_time))
+    coins = list()
+    for _ in range(coin_type):
+        coins.append(int(sys.stdin.readline().strip()))
 
-time_pairs = sorted(time_pairs, key=lambda a: a[0])
-time_pairs = sorted(time_pairs, key=lambda a: a[1])
+    result = 0
+    for i in range(coin_type):
+        if coins[-i-1] <= coin_sum:
+            temp = (coin_sum//coins[-i-1])
+            coin_sum -= temp * coins[-i-1]
+            result += temp
 
-last = 0
-result = 0
-
-for time in time_pairs:
-    if time[0] >= last:
-        result += 1
-        last = time[1]
-
-print(result)
+    print(result)
