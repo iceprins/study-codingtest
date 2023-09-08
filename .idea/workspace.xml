@@ -40,7 +40,7 @@
     &quot;last_opened_file_path&quot;: &quot;/Users/junghk97/git/study-codingtest&quot;
   }
 }</component>
-  <component name="RunManager" selected="Python.1600">
+  <component name="RunManager" selected="Python.2206">
     <configuration name="1541" type="PythonConfigurationType" factoryName="Python" nameIsGenerated="true">
       <module name="study-codingtest" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -83,7 +83,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="18513" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="16954" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="study-codingtest" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -95,7 +95,7 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/18513.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/16954.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -125,7 +125,7 @@
       <option name="INPUT_FILE" value="" />
       <method v="2" />
     </configuration>
-    <configuration name="2573" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
+    <configuration name="2206" type="PythonConfigurationType" factoryName="Python" temporary="true" nameIsGenerated="true">
       <module name="study-codingtest" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -137,7 +137,7 @@
       <option name="IS_MODULE_SDK" value="true" />
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/2573.py" />
+      <option name="SCRIPT_NAME" value="$PROJECT_DIR$/2206.py" />
       <option name="PARAMETERS" value="" />
       <option name="SHOW_COMMAND_LINE" value="false" />
       <option name="EMULATE_TERMINAL" value="false" />
@@ -169,19 +169,19 @@
     </configuration>
     <list>
       <item itemvalue="Python.1541" />
+      <item itemvalue="Python.16954" />
+      <item itemvalue="Python.2206" />
       <item itemvalue="Python.1600" />
       <item itemvalue="Python.1967" />
       <item itemvalue="Python.4179" />
-      <item itemvalue="Python.2573" />
-      <item itemvalue="Python.18513" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.2206" />
+        <item itemvalue="Python.16954" />
         <item itemvalue="Python.1600" />
         <item itemvalue="Python.1967" />
         <item itemvalue="Python.4179" />
-        <item itemvalue="Python.2573" />
-        <item itemvalue="Python.18513" />
       </list>
     </recent_temporary>
   </component>
