@@ -1,23 +1,22 @@
 import sys
 
-meeting_num = int(sys.stdin.readline())
+if __name__ == '__main__':
+    N = int(sys.stdin.readline().strip())
+    schedules = list()
 
-time_pairs = list()
-for _ in range(meeting_num):
-    pairs = sys.stdin.readline().strip()
-    start_time = int(pairs.split()[0])
-    end_time = int(pairs.split()[1])
-    time_pairs.append((start_time, end_time))
+    for _ in range(N):
+        pair = tuple(map(int, sys.stdin.readline().strip().split()))
+        schedules.append(pair)
 
-time_pairs = sorted(time_pairs, key=lambda a: a[0])
-time_pairs = sorted(time_pairs, key=lambda a: a[1])
+    schedules.sort(key=lambda x:x[0])
+    schedules.sort(key=lambda x:x[1])
 
-last = 0
-result = 0
+    right_boundary = 0
+    cnt = 0
 
-for time in time_pairs:
-    if time[0] >= last:
-        result += 1
-        last = time[1]
+    for i in range(N):
+        if schedules[i][0] >= right_boundary:
+            right_boundary = schedules[i][1]
+            cnt += 1
 
-print(result)
+    print(cnt)
