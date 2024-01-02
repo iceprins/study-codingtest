@@ -10,6 +10,7 @@ if __name__ == '__main__':
 
     schedules.sort(key=lambda x:x[0])
     schedules.sort(key=lambda x:x[1])
+    # schedules.sort(key=lambda x: (x[1], x[0])) 으로 한다면 우선 순위를 정해 한 번에 정렬 가능
 
     right_boundary = 0
     cnt = 0
