@@ -2,20 +2,21 @@ import sys
 import heapq
 
 if __name__ == '__main__':
-    lecture_cnt = int(sys.stdin.readline().strip())
+    N = int(sys.stdin.readline().strip())
+    lessons = list()
+    room = list()
 
-    lecture_plan = list()
-    for _ in range(lecture_cnt):
-        heapq.heappush(lecture_plan, list(map(int, sys.stdin.readline().strip().split())))
+    for _ in range(N):
+        lessons.append(tuple(map(int, sys.stdin.readline().strip().split())))
 
-    end_time = list()
-    while lecture_plan:  # lecture의 데이터가 더 이상 없을 때까지 반복
-        min_lec = heapq.heappop(lecture_plan)
+    lessons.sort(key=lambda x: (x[0], x[1]))
+    heapq.heappush(room, lessons[0][1])
 
-        if end_time:    # end_time의 데이터가 존재하면
-            if min_lec[0] >= end_time[0]:
-                heapq.heappop(end_time)
-        heapq.heappush(end_time, min_lec[1])
+    for i in range(1, N):
+        if lessons[i][0] >= room[0]:
+            heapq.heappop(room)
+            heapq.heappush(room, lessons[i][1])
+        else:
+            heapq.heappush(room, lessons[i][1])
 
-    print(len(end_time))
-    
+    print(len(room))
