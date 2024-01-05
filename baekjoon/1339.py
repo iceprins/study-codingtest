@@ -10,7 +10,6 @@ if __name__ == '__main__':
     for _ in range(N):
         word = sys.stdin.readline().strip()
         words.append(word)
-        tmp = 0
         for i in range(len(word), 0, -1):
             if word[-i] not in calculate:
                 calculate[word[-i]] = 10 ** (i - 1)
