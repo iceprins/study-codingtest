@@ -1,19 +1,21 @@
 import sys
 import heapq
 
-pair_num = int(sys.stdin.readline().strip())
-pairs = list()
-result = 0
+if __name__ == '__main__':
+    N = int(sys.stdin.readline().strip())
+    cards = list()
 
-for _ in range(pair_num):
-    heapq.heappush(pairs, int(sys.stdin.readline().strip()))
+    for _ in range(N):
+        cards.append(int(sys.stdin.readline().strip()))
 
-if len(pairs) == 1:
-    print(0)
-else:
-    while len(pairs) > 1:
-        temp = heapq.heappop(pairs) + heapq.heappop(pairs)
-        result += temp
-        heapq.heappush(pairs, temp)
+    cards.sort()
 
-    print(result)
+    ans = 0
+    for i in range(N - 1):
+        calculate = heapq.heappop(cards)
+        calculate += heapq.heappop(cards)
+        ans += calculate
+        heapq.heappush(cards, calculate)
+
+
+    print(ans)
