@@ -20,7 +20,6 @@ def bfs(g, x, y):
                 continue
             if g[nx][ny] == g[x][y] and visited[nx][ny] == 0:
                 visited[nx][ny] = 1
-                # visited[nx][ny] = ord(g[nx][y])
                 queue.append((nx, ny))
 
 
