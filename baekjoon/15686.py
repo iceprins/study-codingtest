@@ -19,7 +19,6 @@ if __name__ == '__main__':
                 house_pos.append((i, j))
 
     cand = list(combinations(chicken_pos, M))
-    print(cand)
 
     for elem in cand:
         tmp = 0
