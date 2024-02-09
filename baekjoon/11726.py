@@ -11,4 +11,3 @@ if __name__ == '__main__':
             dp[i] = (dp[i - 1] + dp[i - 2]) % 10007
 
     print(dp[n])
-    print(dp)
