@@ -12,7 +12,11 @@ if __name__ == '__main__':
                 dp[i] = 1
             elif i == 2:
                 dp[i] = 1
+            elif i == 3:
+                dp[i] = 1
+            elif i == 4:
+                dp[i] = 2
             else:
-                dp[i] = dp[i - 2] + dp[i - 3]
+                dp[i] = dp[i - 1] + dp[i - 5]
 
         print(dp[N])
