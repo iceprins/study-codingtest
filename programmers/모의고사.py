@@ -8,11 +8,11 @@ def solution(answers):
     scores = [0] * 3
 
     for i in range(len(answers)):
-        if answers[i % 5] == first_ans[i % 5]:
+        if answers[i] == first_ans[i % 5]:
             scores[0] += 1
-        if answers[i % 8] == second_ans[i % 8]:
+        if answers[i] == second_ans[i % 8]:
             scores[1] += 1
-        if answers[i % 10] == third_ans[i % 10]:
+        if answers[i] == third_ans[i % 10]:
             scores[2] += 1
 
     max_score = max(scores)
