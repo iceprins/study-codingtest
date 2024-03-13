@@ -13,7 +13,6 @@ def calculate(n):
 def search(left, right, target):
     while left <= right:
         mid = (left + right) // 2
-        print(mid)
         if calculate(mid) == target:
             return mid
         elif calculate(mid) > target:
@@ -22,10 +21,6 @@ def search(left, right, target):
             right = mid - 1
 
     return right
-
-
-# 200 <= 201
-# 202 <= 201 /  201 <= 200
 
 
 if __name__ == '__main__':
